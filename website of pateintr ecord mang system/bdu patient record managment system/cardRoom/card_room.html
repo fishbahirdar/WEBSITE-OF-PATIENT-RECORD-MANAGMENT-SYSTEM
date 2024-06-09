@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>my web</title>
+     <link rel="stylesheet" href="../style.css">
+     <script>
+      function valid(){alert('submited succesfully');}
+     </script>
+  </head>
+</head>
+<body>
+   
+        <div class="top">
+           <div class="logo"> <img src="../logo.jpg" alt="BDUPatient Record Administration" height="78 px" width="80 px" class="logo">
+           </div>
+           <div class="title">
+            <h2>BIT Patient Record Management System</h2>
+            </div>
+          <div class="nav">
+           <ul>
+            <li><a  href="../home/index.html">Home &nbsp &nbsp</a></li>
+            <li><a class="active" href="card_room.html">Card Room &nbsp &nbsp</a></li>
+            <li><a  href="../provider/_provider.html">Doctor/Nurse &nbsp &nbsp </a></li>
+            <li><a  href="../labratorist/labratorist.html">Labratorist &nbsp &nbsp</a> </li>
+            <li><a  href="../manager/manager.html">Manager &nbsp &nbsp</a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="id"> <h2>Card Room</h2></div>
+        <div class="container">
+        <div class="sidebar">
+         <a class="sactive" href="card_room.html">Add Patient</a><br>
+         <a href="medhistoryform.html"> Add History</a><br>
+         <a href="contact.html">Add Contact</a>
+        </div>
+        <div class="form">
+            <form action="" method="post"><fieldset>
+               <legend> Patient Information form</legend>
+               <label>ID</label>
+               <input type="text" name="PatientID" required><br>
+               <label>First Name</label>
+               <input type="text" name="PatientLname" required><br>
+               <label>Last Name</label>
+               <input type="text" name="PatientFname" required><br>
+               <label>Gender</label><br>
+               <label>Male</label><input type="radio" name="gender" value="male" checked>
+               <label>Female</label><input type="radio" name="gender" value="female"><br>
+               <label>Date Of Birth</label><input type="date" name="DateOfBirth" required><br>
+               <label>Insurance Detail</label><input type="text" name="InsuranceDetail" required><br>
+               <input type="submit" class="submit" onclick="valid()">
+            </fieldset>
+            </form> 
+        </div>
+      </div>
+</body>
+</html>

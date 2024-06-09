@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>my web</title>   
+     <link rel="stylesheet" href="../style.css">
+     <script>
+      function valid(){alert('submited succesfully');}
+     </script>
+  </head>
+</head>
+<body>
+   
+        <div class="top">
+           <div class="logo"> <img src="../logo.jpg" alt="BDUPatient Record Administration" height="78 px" width="80px" class="logo">
+           </div>
+           <div class="title">
+            <h2>BIT Patient Record Management System</h2>
+            </div>
+          <div class="nav">
+            <ul>
+              <li><a  href="../home/index.html">Home &nbsp &nbsp</a></li>
+              <li><a href="../cardRoom/card_room.html">Card Room &nbsp &nbsp</a></li>
+              <li><a  href="../provider/_provider.html">Doctor/Nurse &nbsp &nbsp </a></li>
+              <li><a  href="../labratorist/labratorist.html">Labratorist &nbsp &nbsp</a> </li>
+              <li><a class="active" href="manager.html">Manager &nbsp &nbsp</a></li>
+             </ul>
+          </div>
+        </div>
+       <div class="id"> <h2>Manager</h2></div>
+         <div class="container">
+         <div class="sidebar">
+           <a class="sactive" href="">Add provider</a><br>
+           <a  href="">provider list</a>
+         </div>
+         <div class="form">
+            <form action="" method="post">
+            <fieldset><legend>Provider Registration</legend>
+               <label>Provider ID</label><input type="text" name="ProviderID" required><br>
+               <label>First Name</label><input type="text" name="Fname" required><br>
+               <label>Last Name</label><input type="text" name="Lname" required><br>
+               <label>Phone Number</label><input type="text" name="PhoneNumber" required><br>
+               <label>Speciality</label><input type="text" name="Speciality" required><br>
+               <input type="submit" class="submit" onclick="valid()">
+            </fieldset>
+            </form>
+         </div>
+       </div>
+</body>
+</html
